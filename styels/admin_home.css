@@ -1,0 +1,318 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+    /*  color: #d1f3e7;*/
+    color: rgb(245, 245, 245)
+}
+
+html,
+body,
+.container {
+    width: 90vw;
+    height: 100%;
+    background-color: #2e6d4c
+}
+
+.container {
+    display: grid;
+    width: 100vw;
+    margin: 0px auto;
+    max-width: 1000px;
+    max-height: 600px;
+
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    grid-template-columns: .3fr 1fr;
+    grid-template-rows: 3fr;
+    gap: 15px 0px;
+}
+
+
+
+.body {
+    grid-area: body;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.slide-menu- {
+    grid-area: slide-menu-;
+}
+
+.footer {
+    grid-area: 2 / 1 / 3 / 3;
+}
+
+.body {
+    grid-area: 1 / 2 / 2 / 3;
+}
+
+.slide-menu- {
+    grid-area: 1 / 1 / 2 / 2;
+}
+
+
+
+
+
+/* For presentation only, no need to copy the code below */
+
+.container * {
+    box-sizing: border-box;
+    position: relative;
+}
+
+li {
+    width: auto;
+    height: 100%;
+}
+
+
+
+.slide-menu- li {
+    list-style: none;
+    display: block;
+    width: 100%;
+    height: fit-content;
+    min-height: 14vmin;
+    text-align: center;
+    font-size: 10rem;
+    background-color: #0e3721;
+
+}
+
+.slide-menu- li:hover,
+.slide-menu- li:focus {
+    cursor: pointer;
+    background-color: #2e6d4c
+}
+
+p {
+
+    height: max-height;
+    width: max-content;
+    font-size: 1.5rem;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.slide-menu- {
+    border-radius: 10%;
+    border: 3px solid transparent;
+}
+
+.slide-menu- ul {
+    height: 100%;
+    text-align: center;
+    margin-block-start: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: space-evenly;
+    background-color: #0e3721;
+}
+
+.cicle {
+    border-radius: 50%;
+    width: 25vmax;
+    height: 25vmax;
+    max-width: 150px;
+    max-height: 150px;
+    background-color: #0e3721;
+}
+
+#Dashboard {
+    width: 50vmax;
+    margin: 10px auto;
+}
+
+#counters li {
+    display: inline-block;
+    text-align: center;
+    margin: 100PX 10px;
+}
+
+#counters h2 {
+    padding-top: 30%;
+}
+
+#counters {
+    width: max-content;
+    margin: 0 auto;
+}
+
+#emp tr,
+
+#emp td,
+#emp th {
+    border-collapse: collapse;
+    border: 2px solid #d1f3e7;
+}
+
+button * {
+    color: #0e3721;
+    padding: 0;
+    margin: 0;
+}
+
+button {
+    margin: auto 5px;
+}
+
+i {
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 600px) {
+    p {
+        font-size: 20px;
+    }
+
+    .container {
+        display: grid;
+        grid-auto-columns: 1fr;
+        width: 100vw;
+        height: 100vh;
+        margin: 0px auto;
+        grid-auto-columns: 1fr;
+        grid-auto-rows: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.7fr 3.3fr 1fr;
+        gap: 15px 0px;
+    }
+
+
+    .body {
+        grid-area: 2 / 1 / 3 / 2;
+    }
+
+    .footer {
+        grid-area: 3 / 1 / 4 / 2;
+    }
+
+    .slide-menu- {
+        grid-area: 1 / 1 / 2 / 2;
+    }
+
+    .slide-menu- li {
+        list-style: none;
+        display: inline-block;
+        width: fit-content;
+        height: 100%;
+    }
+
+
+    .slide-menu- ul {
+        height: 100%;
+        text-align: center;
+        margin-block-start: 0px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+
+}
+
+#reports li {
+    list-style: none;
+    display: inline-block;
+    width: 90%;
+    font-size: 90%;
+    min-height: 30px;
+    height: fit-content;
+    padding-top: 10px;
+
+}
+
+
+
+#reports ul {
+    height: 100%;
+    text-align: center;
+    margin-block-start: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #0e3721;
+}
+
+#emp,
+#allattssTable,
+#profile,
+#reports {
+    padding-top: 10px
+}
+
+img {
+    height: 50px;
+    display: block;
+    width: 50px;
+    margin: 10PX auto;
+}
+
+
+#profile table,
+#emp table,
+#allattssTable table {
+    width: 80%;
+    height: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+
+#profile tr {
+    min-height: 300px;
+}
+
+#emp th,
+#allattssTable th {
+    font-size: 80%;
+    font-weight: bold;
+    padding: 5px auto;
+}
+
+#emp td,
+#allattssTable td {
+    font-size: 70%;
+    font-weight: 100;
+    text-align: center;
+}
+
+input[type="date"] {
+
+    color: #0e3721;
+}
+
+#no {
+
+    margin-top: 30px;
+}
+
+#tabcontent {
+    margin-top: 5px;
+}
+select *{
+    color: #0e3721;
+}
+table  {
+    border-collapse: collapse;
+    text-align: center;
+    width: fit-content;
+}
+tbody {
+    text-align:center
+}
