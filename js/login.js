@@ -4,12 +4,12 @@ import * as localStorageModule from "./localStorageModule.js";
     
     if (!localStorageModule.getAllUsers()){
       alert('You must create an admin first ');
-      location.replace("AdminReg.html");
+      location.replace("../html/AdminReg.html");
     }
 
     else if (localStorageModule.countSecurityMen ()==0){
       alert('You must have at least one security');
-      location.replace("registration.html");
+      location.replace("../html/registration.html");
     }
 
     $('form').on('submit',function(e){

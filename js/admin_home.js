@@ -13,7 +13,7 @@ $(function () {
         $("#tabName").text(name);
         $("#tabName").append(`
          <span style="position: relative;margin: 0 10px;">
-           <img style="position: absolute;top: 50%;transform: translateY(-50%);" src="/Images/menu.png">
+           <img style="position: absolute;top: 50%;transform: translateY(-50%);">
         </span>`)
     }
 

@@ -54,11 +54,11 @@ $(function () {
         if (localStorageModule.countSecurityMen() == 0) {
           newUser = new User(_username, fname, lname, _email, age, address, _password, User.CONFIRMED_STATUS, User.SECURITY_Man_TYPE);
           localStorageModule.addNewUser(newUser);
-          location.replace("../login.html");
+          location.replace("./../login.html");
         }
         else {
           localStorageModule.addNewUser(newUser);
-          location.replace("../html/waitMesseage.html");
+          location.replace("./../html/waitMesseage.html");
 
         }
 

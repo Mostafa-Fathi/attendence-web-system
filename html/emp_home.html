@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    
+
     <script src="../js/jquery-3.1.1.js"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"></script>
     <link rel="stylesheet" href="../styels/emp_home.css">
     <script src="../js/emp_home.js" type="module"></script>
+    <script src="../js/clock.js" type="module"></script>
+
 
 </head>
 
@@ -75,7 +77,19 @@
 
         </section>
 
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="col-md-3">
+                <div class="card bg-success text-white">
+                    <h3 class="card-title text-center">
+                        <div class="d-flex flex-wrap justify-content-center mt-2">
+                            <a><span class="badge hours"></span></a> :
+                            <a><span class="badge min"></span></a> :
+                            <a><span class="badge sec"></span></a>
+                        </div>
+                    </h3>
+                </div>
+            </div>
+        </footer>
         <aside class="slide-menu-">
             <ul>
 

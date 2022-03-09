@@ -12,7 +12,9 @@ let password = $('input:eq(5)').val();
 let status = User.CONFIRMED_STATUS;
 let type = User.ADMIN_TYPE;
 let username = $('input:eq(4)').val();
-
+$(function() {
+  alert("dsd");
+});
 $('form').on('submit', function (e) {
   e.preventDefault();
   fname = $('input:first').val();
@@ -27,7 +29,7 @@ $('form').on('submit', function (e) {
     status = User.CONFIRMED_STATUS;
     let newUser = new User(username, fname, lname, email, age, address, password, status, type);
     localStorageModule.addNewUser(newUser);
-    location.replace("../login.html");
+    location.replace("./../login.html");
   }
   else { alert('Please Check Password') }
 
